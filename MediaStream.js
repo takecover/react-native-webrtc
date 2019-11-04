@@ -18,6 +18,7 @@ const MEDIA_STREAM_EVENTS = [
 export default class MediaStream extends EventTarget(MEDIA_STREAM_EVENTS) {
   id: string;
   active: boolean = true;
+  isRemote: boolean = false;
 
   onactive: ?Function;
   oninactive: ?Function;
